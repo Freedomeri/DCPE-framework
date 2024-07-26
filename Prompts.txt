@@ -1,0 +1,50 @@
+\subsection{Few-Shot Examples}
+Presented here are 27 examples that are used in all prompts:
+
+\begin{CJK*}{UTF8}{gbsn}
+\textbf{CoTU and CoTA-RL Examples：}Input：“0 日；” Output：“0  ；” Reasoning：“日”完全不像实体店招，替换为" "。Input：“1 阿水大杯茶；” Output：“1 阿水大杯茶；” Reasoning：“阿水大杯茶”是奶茶店，保留。Input：“2 租；” Output：“2  ；” Reasoning："租"完全不像实体店招、没有意义，替换为" "。Input：“3 中国建设银行；” Output：“3 中国建设银行；” Reasoning：银行名字，保留。Input：“4 deyou德花；” Output：“4 deyou德祐；” Reasoning："deyou德花"很像真实世界的房地产店招"deyou德祐”。Input：“5 华夏食子；” Output：“5 华夏良子；” Reasoning："华夏食子"很像真实世界的养生店"华夏良子"。Input：“6 金云小笼色；” Output：“6 金云小笼包；” Reasoning："金云小笼色"很像真实世界的美食店招"金云小笼包"。Input：“173 登中医诊所；” Output：“173 中医诊所；” Reasoning：“登中医诊所”很像真实世界的诊所店招“中医诊所”但有冗余字符“登”。Input：“174 腹约！；” Output：“174  ；” Reasoning：“腹约！”完全不像实体店招、没有意义，替换为" "；Input：“90 中国移牌；” Output：“90 中国移动；” Reasoning：像通信商“中国移动”，但有错别字。Input：“91 二城民生活；” Output：“91  ；” Reasoning：“二城民生活”不像实体店招，没有意义，替换为" "。Input：“92 质中心；”Output：“92  ；” Reasoning：“质中心”不像实体店招，替换为" "。Input：“93 春兰便民生活；” Output：“93 春兰便民生活；” Reasoning：像生活服务商家，保留。Input：“94 洋；” Output：“94  ；” Reasoning：“洋”不像实体店招，没有意义，替换为" "。Input：“95 祥逸地产；” Output：“95 祥逸地产；” Reasoning：像房地产商家，保留。Input：“282 丨麻辣烫；” Output：“282 麻辣烫；” Reasoning：“丨麻辣烫”很像美食店招“麻辣烫”但有冗余字符“|”。Input：“283 海特水产；” Output：“283 海特水产；” Reasoning：像水产店，保留。Input：“284 莱芜黑猪肉；” Output：“284 莱芜黑猪肉；” Reasoning：像肉店，保留。Input：“285 和锅；” Output：“285 和锅；” Reasoning：“和锅”像火锅店，保留。Input：“286 泰山；” Output：“286  ；”Reasoning：“泰山”不像实体店招。Input：“287 呼恰贝尔竿宝泉铜锅；” Output：“287 呼伦贝尔竿宝泉铜锅；” Reasoning：“呼恰贝尔竿宝泉铜锅”很像火锅店，但“呼恰贝尔”无意义，应该替换“恰”为“伦”改成“呼伦贝尔”。Input：“288 海强采蔬；” Output：“288 海强果蔬；” Reasoning：“海强采蔬”很像果蔬店，“采”应替换为“果”。Input：“289 龙子；” Output：“289  ；” Reasoning：“龙子”不像实体店招。Input：“290 的精；” Output：“290  ；” Reasoning：“的精”不像实体店招。Input：“291 中国邮政管服银行；” Output：“291 中国邮政储蓄银行；” Reasoning：“中国邮政管服银行”很像银行招牌“中国邮政储蓄银行”。Input：“292 蟹都汇；” Output：“292 蟹都汇；” Reasoning：很像海鲜店，保留。Input: “293 黄润鸡；”Output: “293 黄焖鸡；”Reasoning: “黄润鸡”很像美食店招“黄焖鸡”。
+\end{CJK*}
+
+\begin{CJK*}{UTF8}{gbsn}
+\textbf{CoTA-RA Examples：}Input：“0 日；” Reasoning：“日”完全不像实体店招，替换为" "。 Output：“0  ；” 。Input：“1 阿水大杯茶；” Reasoning：“阿水大杯茶”是奶茶店，保留。 Output：“1 阿水大杯茶；” 。Input：“2 租；” Reasoning："租"完全不像实体店招、没有意义，替换为" "。 Output：“2  ；” 。Input：“3 中国建设银行；” Reasoning：银行名字，保留。 Output：“3 中国建设银行；” 。Input：“4 deyou德花；” Reasoning："deyou德花"很像真实世界的房地产店招"deyou德祐”。 Output：“4 deyou德祐；” 。Input：“5 华夏食子；” Reasoning："华夏食子"很像真实世界的养生店"华夏良子"。 Output：“5 华夏良子；” 。Input：“6 金云小笼色；” Reasoning："金云小笼色"很像真实世界的美食店招"金云小笼包"。 Output：“6 金云小笼包；” 。Input：“173 登中医诊所；” Reasoning：“登中医诊所”很像真实世界的诊所店招“中医诊所”但有冗余字符“登”。 Output：“173 中医诊所；” 。Input：“174 腹约！；” Reasoning：“腹约！”完全不像实体店招、没有意义，替换为" "。 Output：“174  ；” ；Input：“90 中国移牌；” Reasoning：像通信商“中国移动”，但有错别字。 Output：“90 中国移动；” 。Input：“91 二城民生活；” Reasoning：“二城民生活”不像实体店招，没有意义，替换为" "。 Output：“91  ；” 。Input：“92 质中心；” Reasoning：“质中心”不像实体店招，替换为" "。 Output：“92  ；” 。Input：“93 春兰便民生活；” Reasoning：像生活服务商家，保留。 Output：“93 春兰便民生活；” 。Input：“94 洋；” Reasoning：“洋”不像实体店招，没有意义，替换为" "。 Output：“94  ；” 。Input：“95 祥逸地产；” Reasoning：像房地产商家，保留。 Output：“95 祥逸地产；” 。Input：“282 丨麻辣烫；” Reasoning：“丨麻辣烫”很像美食店招“麻辣烫”但有冗余字符“|”。 Output：“282 麻辣烫；” 。Input：“283 海特水产；” Reasoning：像水产店，保留。 Output：“283 海特水产；” 。Input：“284 莱芜黑猪肉；” Reasoning：像肉店，保留。 Output：“284 莱芜黑猪肉；” 。Input：“285 和锅；” Reasoning：“和锅”像火锅店，保留。 Output：“285 和锅；” 。Input：“286 泰山；” Reasoning：“泰山”不像实体店招 Output：“286  ；”。Input：“287 呼恰贝尔竿宝泉铜锅；” Reasoning：“呼恰贝尔竿宝泉铜锅”很像火锅店，但“呼恰贝尔”无意义，应该替换“恰”为“伦”改成“呼伦贝尔”。 Output：“287 呼伦贝尔竿宝泉铜锅；” 。Input：“288 海强采蔬；” Reasoning：“海强采蔬”很像果蔬店，“采”应替换为字形相近的“果” Output：“288 海强果蔬；” 。Input：“289 龙子；” Reasoning：“龙子”不像实体店招。 Output：“289  ；” 。Input：“290 的精；” Reasoning：“的精”不像实体店招。 Output：“290  ；” 。Input：“291 中国邮政管服银行；” Reasoning：“中国邮政管服银行”很像银行招牌“中国邮政储蓄银行”。 Output：“291 中国邮政储蓄银行；” 。Input：“292 蟹都汇；” Reasoning：很像海鲜店，保留。 Output：“292 蟹都汇；”。Input: “293 黄润鸡；” Reasoning: “黄润鸡”很像美食店招“黄焖鸡” Output: “293 黄焖鸡；”。
+\end{CJK*}
+
+\subsection{Prompts}
+\textbf{CoTU Prompts:} 
+\begin{CJK*}{UTF8}{gbsn}
+Context：接下来，你会接受来自OCR文字识别后的中文字符串记录输入，目标字符串全部来自济南市，类型有餐饮店、海鲜店、甜品店、汽车汽修店、超市、购物店、小吃店、生活服务店、公司名称、银行、休闲娱乐商家、医疗保健、住宿服务、金融店、通信店、健身房等。这些输入的字符串可能会存在以下几种问题：无意义、有冗余字符、不像任何实体店招、与真实世界的街景实体店招字形、笔画相似但不同。
+
+Task：你要利用你的知识库，完成街景店招文字的数据清洗任务，目的是将每一条字符串都处理为有意义的、最像真实世界中实体商家或品牌的名称。完成任务需要满足两条规则：1、完全不像商业实体店招、没有意义的字符串替换为一个空白字符；2、若某个字符串跟真实世界存在的某个商业店名在字形上很像，则将其改为正确相似的真实世界店名。
+
+Output Format：正则表达式\^ "(.+?)；"$\backslash$n\$。
+
+Examples：CoTU Examples from Appendix A。
+
+Request：接下来是需要清洗的字符串，其中每条记录都以中文分号"；"结束。请严格按Output format："正则表达式\^ (.+?)；"$\backslash$n\$"的格式要求返回结果，不要输出推理过程。
+\end{CJK*}
+
+\textbf{CoTA-RL Prompts:}
+\begin{CJK*}{UTF8}{gbsn}
+Context：接下来，你会接受来自OCR文字识别后的中文字符串记录输入，目标字符串全部来自济南市，类型有餐饮店、海鲜店、甜品店、汽车汽修店、超市、购物店、小吃店、生活服务店、公司名称、银行、休闲娱乐商家、医疗保健、住宿服务、金融店、通信店、健身房等。这些输入的字符串可能会存在以下几种问题：无意义、有冗余字符、不像任何实体店招、与真实世界的街景实体店招字形、笔画相似但不同。
+
+Task：你要利用你的知识库，完成街景店招文字的数据清洗任务，目的是将每一条字符串都处理为有意义的、最像真实世界中实体商家或品牌的名称。完成任务需要满足两条规则：1、完全不像商业实体店招、没有意义的字符串替换为一个空白字符；2、若某个字符串跟真实世界存在的某个商业店名在字形上很像，则将其改为正确相似的真实世界店名。
+
+Output Format：每条记录输出为一行原始输入、一行输出结果、和一行推理过程，用正则表达式表示为:Input: \^"(.+?)"$\backslash$n, Output: \^"(.+?)；"$\backslash$n, Reasoning: \^  (.+?)"$\backslash$n\$。
+
+Examples：CoTA-RL Examples from Appendix A。
+
+Request：接下来是需要清洗的字符串，其中每条记录都以中文分号"；"结束。请对每一条记录严格按"Output format: 每条记录输出为一行原始输入、一行输出结果、和一行推理过程，用正则表达式表示为:Input: \^"(.+?)"$\backslash$n, Output: \^"(.+?)；"$\backslash$n, Reasoning:\^"(.+?)"$\backslash$n\$"的格式要求返回结果。不要省略任何一条记录。
+\end{CJK*}
+
+\textbf{CoTA-RA Prompts:}
+\begin{CJK*}{UTF8}{gbsn}
+Context：接下来，你会接受来自OCR文字识别后的中文字符串记录输入，目标字符串全部来自济南市，类型有餐饮店、海鲜店、甜品店、汽车汽修店、超市、购物店、小吃店、生活服务店、公司名称、银行、休闲娱乐商家、医疗保健、住宿服务、金融店、通信店、健身房等。这些输入的字符串可能会存在以下几种问题：无意义、有冗余字符、不像任何实体店招、与真实世界的街景实体店招字形、笔画相似但不同。
+
+Task：你要利用你的知识库，完成街景店招文字的数据清洗任务，目的是将每一条字符串都处理为有意义的、最像真实世界中实体商家或品牌的名称。完成任务需要满足两条规则：1、完全不像商业实体店招、没有意义的字符串替换为一个空白字符；2、若某个字符串跟真实世界存在的某个商业店名在字形上很像，则将其改为正确相似的真实世界店名。
+
+Output Format：每条记录输出为一行原始输入、一行推理过程、和一行输出结果，用正则表达式表示为:Input: \^"(.+?)"$\backslash$n, Reasoning: \^  (.+?)"$\backslash$n, Output: \^"(.+?)；"$\backslash$n,\$。
+
+Examples：CoTA-RA Examples from Appendix A。
+
+Request：接下来是需要清洗的字符串，其中每条记录都以中文分号"；"结束。请对每一条记录严格按"Output format: 每条记录输出为一行原始输入、一行推理过程、和一行输出结果，用正则表达式表示为:Input: \^"(.+?)"$\backslash$n, Reasoning: \^  (.+?)"$\backslash$n, Output: \^"(.+?)；"$\backslash$n\$"的格式要求返回结果。不要省略任何一条记录。
+\end{CJK*}
