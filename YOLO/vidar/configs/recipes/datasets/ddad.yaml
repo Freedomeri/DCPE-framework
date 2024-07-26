@@ -1,0 +1,46 @@
+###############################################
+train_self_supervised_MR:
+    name: [Ourawboros]
+    path: [/data/datasets/DDAD/ddad.json]
+    split: [train]
+    context: [-1,1]
+    cameras: [[0]]
+    labels: [intrinsics]
+    labels_context: [intrinsics]
+    prefix: [CAMERA]
+    resolution: [[1216,1936]]
+    augmentation:
+        resize: [384,640]
+    dataloader:
+        batch_size: 8
+###############################################
+val_front:
+    name: [Ourawboros]
+    path: [/data/datasets/DDAD/ddad.json]
+    split: [val]
+    context: []
+    cameras: [[1]]
+    labels: [depth]
+    depth_type: [lidar]
+    prefix: [CAMERA]
+    resolution: [[1216,1936]]
+    augmentation:
+        resize: [384,640]
+    dataloader:
+        batch_size: 8
+###############################################
+val_6cams:
+    name: [Ourawboros]
+    path: [/data/datasets/DDAD/ddad.json]
+    split: [val]
+    context: []
+    cameras: [[1],[5],[6],[7],[8],[9]]
+    labels: [depth]
+    depth_type: [lidar]
+    prefix: [CAMERA]
+    resolution: [[1216,1936]]
+    augmentation:
+        resize: [384,640]
+    dataloader:
+        batch_size: 8
+###############################################
