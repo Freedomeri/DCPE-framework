@@ -17,3 +17,6 @@ paddlepaddle-gpu == 2.5.1
 3、NLP: 
 python == 3.7.16
 torch == 1.7.0+cu110
+
+
+Models are stored in https://drive.google.com/drive/folders/1G7Y-htFCIlfgfJdyGDNm_wMszdtu-_Kc?usp=sharing
